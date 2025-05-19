@@ -1,0 +1,76 @@
+  /* Base styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #eef2f5;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+/* Centered card */
+.container {
+  background: #ffffff;
+  padding: 25px 35px;
+  margin: 50px auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 420px;
+}
+
+/* Titles */
+h1 {
+  text-align: center;
+  color: #d32f2f;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Fields */
+input, select, button {
+  margin-bottom: 15px;
+  padding: 12px;
+  font-size: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+/* Button */
+button {
+  background-color: #d32f2f;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #b71c1c;
+}
+
+/* Status message */
+#statusMessage {
+  text-align: center;
+  color: green;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Other issue transition */
+#otherIssue {
+  transition: all 0.3s ease-in-out;
+}
