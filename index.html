@@ -1,0 +1,52 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🚨 Emergency Assistance | DigiforgeDynamics</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>🚨 Emergency Assistance</h1>
+    <h2 class="subtitle">by DigiforgeDynamics</h2>
+    
+    <form id="emergencyForm">
+      <input type="text" id="passengerName" name="passengerName" placeholder="👤 Your Name" required />
+      <input type="text" id="train_number" name="trainNumber" placeholder="🚆 Train Number" required />
+      <input type="number" id="Seat" name="SeatNumber" placeholder="💺 Seat Number" required />
+      <input type="text" id="location" name="location" placeholder="📍 Current Location" required />
+
+      <select id="issueType" name="issueType" required>
+        <option value="">⚠️ Select Issue</option>
+        <option value="Fever">🤒 High Fever</option>
+        <option value="Stomach Pain">🤢 Stomach Pain</option>
+        <option value="headache">🤯 Headache</option>
+        <option value="Vomiting">🤮 Vomiting Sensation</option>
+        <option value="other">✍️ Other</option>
+      </select>
+
+      <input
+        type="text"
+        id="otherIssue"
+        name="otherIssue"
+        placeholder="📝 Please specify your issue"
+        style="display: none;"
+      />
+
+      <input type="email" id="Email" name="Email" placeholder="📧 Email (Optional)" />
+      <input type="tel" id="PhoneNumber" name="PhoneNumber" placeholder="📱 Phone Number" required />
+      <input type="text" id="allergies" name="allergies" placeholder="⚠️ Allergy Info (Optional)" />
+      <input type="text" id="group" name="group" placeholder="🩸 Blood Group" required />
+      <input type="text" id="coach" name="coachNumber" placeholder="🚃 Coach Number" required />
+
+      <button type="submit">🚨 Submit Emergency Request</button>
+    </form>
+
+    <p id="statusMessage"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
